@@ -34,3 +34,19 @@ export class ArtistPlaylist extends Component {
     ) : null
   }
 }
+
+const mapStateToProps = ({
+  artistPlaylists,
+  track,
+  artist,
+  artistPlaylist
+}) => ({ artistPlaylists, track, artist, artistPlaylist })
+
+export default connect(mapStateToProps)(ArtistPlaylist)
+
+ArtistPlaylist.propTypes = {
+  artistPlaylists: PropTypes.array,
+  artistPlaylist: PropTypes.array,
+  track: PropTypes.object,
+  artist: PropTypes.object
+}
