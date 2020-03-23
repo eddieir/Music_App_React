@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { Artist } from './index'
+import { AlbumSongs } from './albumSongs'
 import renderer from 'react-test-renderer'
 
-describe('Artist', () => {
+describe('AlbumSongs', () => {
   it('should render self', () => {
     const rendered = renderer.create(
       <Router>
-        <Artist artist={{}} />
+        <AlbumSongs album={{}} track={{}} />
       </Router>
     )
     expect(rendered.toJSON()).toMatchSnapshot()
