@@ -20,6 +20,7 @@
     "redux": "^4.0.5",
     "redux-async-initial-state": "^0.3.0",
     "redux-thunk": "^2.3.0",
+    "typescript": "^3.8.3",
     "webpack": "^4.19.1",
     "webpack-dev-server": "^3.1.9"
   },
