@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  @import 'desktop/_scroll.scss';
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 1em;
+  }
+}

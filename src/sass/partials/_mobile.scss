@@ -1,0 +1,11 @@
+main {
+  flex: 1 1 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 5vw;
+}
+.active button {
+  i, p {
+      color: rgb(118, 165, 202);
+  }
+}
