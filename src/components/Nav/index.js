@@ -12,7 +12,7 @@ function checkActive(_, location) {
 
 const Nav = ({ onChange, setRef }) => (
   <nav className="nav">
-    <img src="https://drive.google.com/file/d/1a-s8ejmCNzIR6gNpFZAWuGye2qVbPq15/view?usp=sharing" alt="" />
+    <img src="/assets/logo/Logomark_white-resized.png" alt="" />
     <NavLink to="/" activeClassName="active" isActive={checkActive}>
       Explore
     </NavLink>
