@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import Box, { splitBoxProps } from 'ui-box';
 import { Icon, TextInput, withTheme, StackingOrder } from 'evergreen-ui';
 

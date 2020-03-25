@@ -5,7 +5,7 @@ import store from 'store'
 import { searchArtistInfo } from 'helperFunctions'
 import fetchJsonp from 'fetch-jsonp'
 import './style.scss'
-import { response } from 'express'
+//import { response } from 'express'
 
 const { DZ } = window
 

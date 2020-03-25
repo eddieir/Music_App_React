@@ -75,15 +75,15 @@ class App extends Component {
     return !this.props.track.id ? (
       <Loader />
     ) : (
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Top} />
-            <Route path="/artist" component={Artist} />
-            <Route path="/search" component={Search} />
-            <Route component={Top} />
-          </Switch>
-        </Router>
-      )
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Top} />
+          <Route path="/artist" component={Artist} />
+          <Route path="/search" component={Search} />
+          <Route component={Top} />
+        </Switch>
+      </Router>
+    )
   }
 }
 

@@ -10,7 +10,7 @@ import {
   choosePlaylist
 } from 'helperFunctions'
 import './style.scss'
-import { types } from 'node-sass'
+//import { types } from 'node-sass'
 
 const { DZ } = window
 
