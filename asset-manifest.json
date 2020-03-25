@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Music_App_React/static/css/main.ccc80eb6.chunk.css",
-    "main.js": "/Music_App_React/static/js/main.d2c0ddbb.chunk.js",
-    "main.js.map": "/Music_App_React/static/js/main.d2c0ddbb.chunk.js.map",
+    "main.js": "/Music_App_React/static/js/main.daefec42.chunk.js",
+    "main.js.map": "/Music_App_React/static/js/main.daefec42.chunk.js.map",
     "runtime-main.js": "/Music_App_React/static/js/runtime-main.73918af3.js",
     "runtime-main.js.map": "/Music_App_React/static/js/runtime-main.73918af3.js.map",
     "static/js/2.051535af.chunk.js": "/Music_App_React/static/js/2.051535af.chunk.js",
     "static/js/2.051535af.chunk.js.map": "/Music_App_React/static/js/2.051535af.chunk.js.map",
     "index.html": "/Music_App_React/index.html",
-    "precache-manifest.6d1eabad8e286884ef7de34f8196129d.js": "/Music_App_React/precache-manifest.6d1eabad8e286884ef7de34f8196129d.js",
+    "precache-manifest.cba728454cda1d82b51f7230c5d053ff.js": "/Music_App_React/precache-manifest.cba728454cda1d82b51f7230c5d053ff.js",
     "service-worker.js": "/Music_App_React/service-worker.js",
     "static/css/main.ccc80eb6.chunk.css.map": "/Music_App_React/static/css/main.ccc80eb6.chunk.css.map",
     "static/js/2.051535af.chunk.js.LICENSE.txt": "/Music_App_React/static/js/2.051535af.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.73918af3.js",
     "static/js/2.051535af.chunk.js",
     "static/css/main.ccc80eb6.chunk.css",
-    "static/js/main.d2c0ddbb.chunk.js"
+    "static/js/main.daefec42.chunk.js"
   ]
 }
