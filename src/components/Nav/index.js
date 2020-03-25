@@ -12,7 +12,7 @@ function checkActive(_, location) {
 
 const Nav = ({ onChange, setRef }) => (
   <nav className="nav">
-    <img src="/assets/logo/logomark_white-resized.png" alt="" />
+    <img src="https://image.freepik.com/free-vector/colorful-voice-waves-motion-sound-frequency-rhythm-radio-dj-amplitude_102902-274.jpg" alt="" />
     <NavLink to="/" activeClassName="active" isActive={checkActive}>
       Explore
     </NavLink>
