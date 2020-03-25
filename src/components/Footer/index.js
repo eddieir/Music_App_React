@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { login } from 'helpFunctions'
+import React from 'react'
+import { login } from 'helperFunctions'
 import './style.scss'
 
 const Footer = () => (

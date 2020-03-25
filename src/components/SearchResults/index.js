@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import store from 'store'
 import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
@@ -12,13 +12,13 @@ import {
 import './style.scss'
 import { types } from 'node-sass'
 
-const {DZ} = window
+const { DZ } = window
 
-export class SearchResults extends Component{
-  options = ['track','album','artist','playlist']
+export class SearchResults extends Component {
+  options = ['track', 'album', 'artist', 'playlist']
 
-  handlerRenderItem = (item,type)=>{
-    return type === 'track' ?(
+  handlerRenderItem = (item, type) => {
+    return type === 'track' ? (
       <NavLink
         to="/"
         key={item.id}
@@ -31,7 +31,7 @@ export class SearchResults extends Component{
         </p>
         <img src={item.album.cover_medium && item.album.cover_medium} alt="" />
       </NavLink>
-    ): type === 'album' ? (
+    ) : type === 'album' ? (
       <NavLink
         to={`/album/${item.id}`}
         key={item.id}
@@ -61,21 +61,21 @@ export class SearchResults extends Component{
         <img src={item.picture_medium} alt="" />
       </NavLink>
     ) : (
-      <NavLink
-        to={`/playlist/${item.id}`}
-        key={item.id}
-        className="result"
-        onClick={() => choosePlaylist(item.id, this.props)}
-      >
-        <p>
-          <span>{item.title}</span>
-        </p>
-        <img src={item.picture_medium} alt="" />
-      </NavLink>
-    )
+            <NavLink
+              to={`/playlist/${item.id}`}
+              key={item.id}
+              className="result"
+              onClick={() => choosePlaylist(item.id, this.props)}
+            >
+              <p>
+                <span>{item.title}</span>
+              </p>
+              <img src={item.picture_medium} alt="" />
+            </NavLink>
+          )
   }
 
-  selectSong = item =>{
+  selectSong = item => {
     store.dispatch(actions.prevTrackAction(this.props.track))
     store.dispatch(actions.changeTrackAction(item))
     searchArtistInfo(item)
@@ -83,7 +83,7 @@ export class SearchResults extends Component{
     DZ && DZ.player.playTracks([item.id])
   }
 
-  render(){
+  render() {
     const { results, value } = this.props
 
     return (
@@ -109,6 +109,6 @@ export class SearchResults extends Component{
   }
 }
 
-const mapStateToProps = ({track}) =>{(track)}
+const mapStateToProps = ({ track }) => ({ track })
 
-export default connect(mapStateToProps)(SearchResults                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )
+export default connect(mapStateToProps)(SearchResults)

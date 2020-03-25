@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import icons from 'const';
-
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import icons from 'const'
 
 const { DZ } = window
 
@@ -63,7 +62,6 @@ export class Volume extends Component {
       </div>
     )
   }
-
 }
 
 const mapStateToProps = ({
@@ -84,4 +82,4 @@ const mapStateToProps = ({
   artistPlaylist
 })
 
-export default connet(mapStateToProps)(volume)
+export default connect(mapStateToProps)(Volume)

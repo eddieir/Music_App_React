@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from 'actions';
 import store from 'store';
-import { searchArtistInfo, random } from 'helpFunctions'
+import { searchArtistInfo, random } from 'helperFunctions'
 import Rewind from './rewind';
 import Forward from './forward';
 import icons from 'const';

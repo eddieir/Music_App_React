@@ -1,27 +1,28 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import store from 'store';
-import AlbumSongs from './albumSongs';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import store from 'store'
+import AlbumSongs from './albumSongs'
 import fetchJsonp from 'fetch-jsonp'
 import { changeAlbumAction } from 'actions/index.js'
-import './style.scss'
+import './styles.scss'
 
 const windowWidth = window.innerWidth
-const showCount = windowWidth <= 414 ? 2 : windowWidth > 414 && windowWidth < 768 ? 3 : 7
+const showCount =
+  windowWidth <= 414 ? 2 : windowWidth > 414 && windowWidth < 768 ? 3 : 7
 
-export class Album extends Component {
-
+export class Albums extends Component {
   constructor() {
     super()
     this.sliderRef = React.createRef()
     this.closeRef = React.createRef()
     this.songsRef = React.createRef()
     this.state = {
-      currentSlider: 0,
+      currentSliderCount: 0,
       scrollWidth: 0
     }
   }
+
   handleNext = () => {
     const { currentSliderCount, scrollWidth } = this.state
     this.sliderCount = this.props.albums.length / showCount - 1

@@ -4,7 +4,7 @@ import Nav from 'components/Nav'
 import Player from 'components/Player'
 import SearchResults from 'components/SearchResults'
 import Footer from 'components/Footer'
-import './search.scss'
+import './Search.scss'
 import { connect } from 'react-redux'
 import fetchJsonp from 'fetch-jsonp'
 
